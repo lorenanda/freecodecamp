@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id="title">Survey form</h1>
+<div id ="form-outer">
+  <p id="description">
+    Please evaluate the course <i>Natural Language Processing 101</i>.
+  </p>
+  <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">Name:</label>
+      </div>
+      <div class="rightTab">
+        <input type="text" name="name" id="name" class="input-field" placeholder="your name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for "email">Email:</label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" placeholder="your email" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for "age">Age:</label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="10" max="100" class="input-field" placeholder="your age" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="degree" for "degree">What degree are you currently pursuing?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="degree" class="dropdown">
+          <option disabled value>Select one</option>
+          <option value="ba">B.A.</option>
+          <option value="bsc">B.Sc.</option>
+          <option value="ma">M.A.</option>
+          <option value="msc">M.Sc.</option>
+          <option value="phd">Ph.D.</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="specialization">What is your specialization?</label>
+      </div>
+      <div class="rightTab">
+        <ul id="specialization" style="list-style: none;">
+          <li class="checkbox"><label><input name="focus" value="1" type="checkbox" class="ratings">Phonetics / Phonology</label></li>
+          <li class="checkbox"><label><input name="focus" value="5" type="checkbox" class="ratings">Psycholinguistics</label></li>
+          <li class="checkbox"><label><input name="focus" value="4" type="checkbox" class="ratings">Pragmatics</label></li>
+          <li class="checkbox"><label><input name="focus" value="3" type="checkbox" class="ratings">Semantics</label></li>
+          <li class="checkbox"><label><input name="focus" value="2" type="checkbox" class="ratings">Syntax</label></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="rating">Did you find this course useful?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Yes<input name="radio-buttons" value="1" type="radio" class="rating"></label></li>
+          <li class="radio"><label>Somehow<input name="radio-buttons" value="1" type="radio" class="rating"></label></li>
+          <li class="radio"><label>No<input name="radio-buttons" value="1" type="radio" class="rating"></label></li>
+        </ul> 
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <label for="comments">What did you (not) like about this course?</label>
+    </div>
+    <div class="rightTab">
+      <textarea id="comments" class="input-field" style="heiht:50px;resize:vertical;" name="comment" placeholder="Enter your comment here."></textarea>
+    </div>
+    
+    <br><button id="submit" type="submit">Submit</button></br>
+    
+ </form>
+</div>
+</html>
