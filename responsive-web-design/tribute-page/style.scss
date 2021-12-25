@@ -1,7 +1,13 @@
 html, body {
   font-family: Calibri, sans-serif;
   text-align: center;
-  color: white;
+  color: #49656A;
+}
+
+@font-face {
+  font-family: MomsTypewriter;
+  src: url(./fonts/moms_typewriter.ttf);
+  font-weight: bold;
 }
 
 #main {
@@ -9,7 +15,11 @@ html, body {
   padding: 15px;
   border: 0px solid;
   border-radius: 5px;
-  background: black;
+  background: #CABB9D;
+}
+
+h1 {
+  font-family: MomsTypewriter;
 }
 
 img {
@@ -17,14 +27,17 @@ img {
   display: block; 
   height: auto;
   margin: auto;
+  width: 284px;
+  padding: 10px 10px 40px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
 }
 
 #img-div {
   margin: -5px;
   margin-top :20px;
   width: 100%;
-  border: 5px solid white;
-  background: white;
+  background: #CABB9D;
 }
 
 #img-caption {
@@ -47,8 +60,22 @@ li {
 }
 
 blockquote {
-  font-family: Times New Roman;
-  font-style: italic;
+  font-family: MomsTypewriter;
+  font-size: x-large;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #49656A;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }
 
 
@@ -63,7 +90,7 @@ blockquote {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   background: #ffffff;
 }
 
@@ -79,7 +106,7 @@ body {
   content: '';
   position: absolute;
   width: 2px;
-  background: #6e0d00;
+  background: #847C5F;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -109,7 +136,7 @@ body {
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #6e0000;
+  border: 2px solid #847C5F;
   border-radius: 16px;
   z-index: 1;
 }
@@ -125,7 +152,7 @@ body {
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #001a6e;
+  background: #847C5F;
   z-index: 1;
 }
 
@@ -134,13 +161,14 @@ body {
 }
 
 .container .date {
+  font-family: MomsTypewriter;
   position: absolute;
   display: inline-block;
   top: calc(50% - 8px);
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
-  color: #ffef0a;
+  color: #49656A;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -161,12 +189,12 @@ body {
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: #000000;
-  border: 2px solid #ffef0a;
+  background: #CABB9D;
+  border: 2px solid #847C5F;
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
-  color: #ffef0a;
+  color: #CABB9D;
   z-index: 1;
 }
 
@@ -201,7 +229,7 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #000000;
+  color: #49656A;
 }
 
 @media (max-width: 767.98px) {
@@ -227,7 +255,7 @@ body {
   .container.left::before,
   .container.right::before {
     left: 100px;
-    border-color: transparent #ffef0a transparent transparent;
+    border-color: transparent #CABB9D transparent transparent;
   }
 
   .container.left .date,
