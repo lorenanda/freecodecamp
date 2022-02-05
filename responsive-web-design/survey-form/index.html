@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.scss">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
@@ -41,12 +41,15 @@
         </div>
       </div>
 
-      <label for="start">Date:</label>
 
-<input type="date" id="start" name="trip-start"
-       value="2021-07-22"
-       min="2018-01-01" max="2022-12-31">
-
+      <div class="rowTab">
+        <div class="labels">
+          <label for="start">Date:</label>
+        </div>
+        <div class="rightTab">
+          <input type="date" id="start" name="trip-start" value="2021-07-22" min="2018-01-01" max="2022-12-31">
+        </div>
+      </div>
 
       <div class="rowTab">
         <div class="labels">
@@ -56,7 +59,7 @@
           <select id="dropdown" name="degree" class="dropdown">
             <option disabled value>Select one</option>
             <option value="film-1">Film 1</option>
-            <option value="film-2">Film-2</option>
+            <option value="film-2">Film 2</option>
           </select>
         </div>
       </div>
@@ -95,15 +98,15 @@
 
       <div class="rowTab">
         <div class="labels">
-        <label for="comments">What did you (not) like about this course?</label>
-      </div>
-      <div class="rightTab">
-        <textarea id="comments" class="input-field" style="heiht:50px;resize:vertical;" name="comment"
-          placeholder="Enter your comment here."></textarea>
-      </div>
+          <label for="comments">What did you (not) like about this course?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="heiht:50px;resize:vertical;" name="comment"
+            placeholder="Enter your comment here."></textarea>
+        </div>
 
 
-      <br><button id="submit" type="submit">Submit</button></br>
+        <br><button id="submit" type="submit">Submit</button></br>
 
   </form>
 </div>
